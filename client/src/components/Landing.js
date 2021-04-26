@@ -3,14 +3,22 @@ import logo from '../assets/loud-speaker.png';
 
 function Landing() {
   return (
-    <div className="center-align">
-      <h1>reklam</h1>
-      <b>Get better feedback from your team</b>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
+      {/* <h1>reklam</h1> */}
+      <h4
+        style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '40px' }}
+      >
+        Get better feedback from your team
+      </h4>
       <img
-        className="center-align"
         src={logo}
         alt="reklam email automation"
-        style={{ margin: '40px', width: '50vw' }}
+        style={{ marginLeft: 'auto', marginRight: 'auto', width: '40vw' }}
       />
     </div>
   );
