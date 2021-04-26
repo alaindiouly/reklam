@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/rocket.svg';
+import logo from '../assets/loud-speaker.png';
 
 function Landing() {
   return (
