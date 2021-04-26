@@ -1,0 +1,6 @@
+DELETE http://localhost:5000/api/surveys/6081328ca70574203d9daf28
+
+
+
+###
+GET http://localhost:5000/api/current_user
