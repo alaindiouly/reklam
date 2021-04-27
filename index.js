@@ -1,9 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
+// session data is stored client side
+// ===================================
+// This module stores the session data on the client within a cookie,
+// while a module like express-session stores only a session identifier
+// on the client within a cookie and stores the session data on the server,
+// TYPICALLY in a database. (like cached in Redis?)
+// just the session id is stored in the cookie
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
-const { initialize } = require('passport');
 require('./models/User');
 // User model has to be required BEFORE passport (which uses it)
 require('./models/Surveys');

@@ -13,9 +13,6 @@ function SurveyList() {
 
   const surveys = useSelector((state) => state.surveys);
 
-  //REMOVE
-  console.log(surveys);
-
   function renderSurveys() {
     if (surveys.length === 0) {
       return (

@@ -8,15 +8,21 @@ function Header() {
 
   function renderAuth() {
     switch (isLoggedIn) {
+      // temporary state while fecthing data
       case null:
         return;
       case false:
+        //TODO check href for GitHub login
         return (
-          <li>
-            <a href="/auth/google">Login With Google</a>
-          </li>
+          <div>
+            <a href="/auth/google" style={{}}>
+              Login With Google
+            </a>
+            <a href="/auth/github">Login With GitHub</a>
+          </div>
         );
       default:
+        // i.e. case true
         return (
           <React.Fragment>
             <li>
@@ -42,7 +48,7 @@ function Header() {
         >
           reklam
         </Link>
-        <ul className="right">{renderAuth()}</ul>
+        <div className="right">{renderAuth()}</div>
       </div>
     </nav>
   );
